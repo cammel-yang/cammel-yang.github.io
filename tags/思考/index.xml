@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>思考 - 标签 - cammel-yang</title>
+        <link>/tags/%E6%80%9D%E8%80%83/</link>
+        <description>思考 - 标签 - cammel-yang</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 03 Sep 2022 18:43:49 &#43;0800</lastBuildDate><atom:link href="/tags/%E6%80%9D%E8%80%83/" rel="self" type="application/rss+xml" /><item>
+    <title>重新思考</title>
+    <link>/think_again/</link>
+    <pubDate>Sat, 03 Sep 2022 18:43:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>/think_again/</guid>
+    <description><![CDATA[了解你所未知事物的力量]]></description>
+</item></channel>
+</rss>
