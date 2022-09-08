@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>考え直せ - 分类 - cammel-yang</title>
+        <link>/categories/%E8%80%83%E3%81%88%E7%9B%B4%E3%81%9B/</link>
+        <description>考え直せ - 分类 - cammel-yang</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 04 Sep 2022 15:44:33 &#43;0800</lastBuildDate><atom:link href="/categories/%E8%80%83%E3%81%88%E7%9B%B4%E3%81%9B/" rel="self" type="application/rss+xml" /><item>
+    <title>考え直せ</title>
+    <link>/think_again.ja/</link>
+    <pubDate>Sun, 04 Sep 2022 15:44:33 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>/think_again.ja/</guid>
+    <description><![CDATA[知らないことを知る力]]></description>
+</item></channel>
+</rss>

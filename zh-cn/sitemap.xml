@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>/</loc><lastmod>2022-09-03T18:43:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>/</loc><lastmod>2022-09-04T15:44:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="/en/"
@@ -11,7 +11,7 @@
                     hreflang="zh-cn"
                     href="/"
                     /></url><url>
-            <loc>/categories/</loc><lastmod>2022-09-03T18:43:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>/categories/</loc><lastmod>2022-09-04T15:44:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="/en/categories/"
@@ -20,7 +20,7 @@
                     hreflang="zh-cn"
                     href="/categories/"
                     /></url><url>
-            <loc>/posts/</loc><lastmod>2022-09-03T18:43:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>/posts/</loc><lastmod>2022-09-04T15:44:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="/en/posts/"
@@ -29,7 +29,7 @@
                     hreflang="zh-cn"
                     href="/posts/"
                     /></url><url>
-            <loc>/tags/</loc><lastmod>2022-09-03T18:43:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>/tags/</loc><lastmod>2022-09-04T15:44:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="/en/tags/"
@@ -38,6 +38,9 @@
                     hreflang="zh-cn"
                     href="/tags/"
                     /></url><url>
+            <loc>/tags/%E8%80%83%E3%81%88%E7%9B%B4%E3%81%9B/</loc><lastmod>2022-09-04T15:44:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>/categories/%E8%80%83%E3%81%88%E7%9B%B4%E3%81%9B/</loc><lastmod>2022-09-04T15:44:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>/think_again.ja/</loc><lastmod>2022-09-04T15:44:33&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/tags/%E6%80%9D%E8%80%83/</loc><lastmod>2022-09-03T18:43:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/categories/%E6%80%9D%E8%80%83/</loc><lastmod>2022-09-03T18:43:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/think_again/</loc><lastmod>2022-09-03T18:43:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
