@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>/en/</loc><lastmod>2022-09-03T22:17:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>/en/</loc><lastmod>2022-09-09T05:15:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="/"
@@ -11,7 +11,7 @@
                     hreflang="en"
                     href="/en/"
                     /></url><url>
-            <loc>/en/categories/</loc><lastmod>2022-09-03T22:17:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>/en/categories/</loc><lastmod>2022-09-09T05:15:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="/categories/"
@@ -20,9 +20,10 @@
                     hreflang="en"
                     href="/en/categories/"
                     /></url><url>
-            <loc>/en/tags/eye/</loc><lastmod>2022-09-03T22:17:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>/en/categories/eye/</loc><lastmod>2022-09-03T22:17:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>/en/posts/</loc><lastmod>2022-09-03T22:17:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>/en/tags/glaucoma/</loc><lastmod>2022-09-09T05:15:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>/en/categories/glaucoma/</loc><lastmod>2022-09-09T05:15:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>/en/glaucoma/</loc><lastmod>2022-09-09T05:15:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>/en/posts/</loc><lastmod>2022-09-09T05:15:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="/posts/"
@@ -31,7 +32,7 @@
                     hreflang="en"
                     href="/en/posts/"
                     /></url><url>
-            <loc>/en/tags/</loc><lastmod>2022-09-03T22:17:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>/en/tags/</loc><lastmod>2022-09-09T05:15:53&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
                         rel="alternate"
                         hreflang="zh-cn"
                         href="/tags/"
@@ -40,6 +41,8 @@
                     hreflang="en"
                     href="/en/tags/"
                     /></url><url>
+            <loc>/en/tags/eye/</loc><lastmod>2022-09-03T22:17:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>/en/categories/eye/</loc><lastmod>2022-09-03T22:17:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/en/the_wills_eye/</loc><lastmod>2022-09-03T22:17:38&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/en/tags/think/</loc><lastmod>2022-09-03T18:31:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>/en/categories/think/</loc><lastmod>2022-09-03T18:31:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>

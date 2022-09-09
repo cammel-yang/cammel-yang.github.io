@@ -3,9 +3,16 @@
         <title>cammel-yang</title>
         <link>/</link>
         <description>cammel-yang</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 03 Sep 2022 18:43:49 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 04 Sep 2022 15:44:33 &#43;0800</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>考え直せ</title>
+    <link>/think_again.ja/</link>
+    <pubDate>Sun, 04 Sep 2022 15:44:33 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>/think_again.ja/</guid>
+    <description><![CDATA[知らないことを知る力]]></description>
+</item><item>
     <title>重新思考</title>
     <link>/think_again/</link>
     <pubDate>Sat, 03 Sep 2022 18:43:49 &#43;0800</pubDate>
@@ -74,12 +81,5 @@
     <author>作者</author>
     <guid>/the_housing_boom_and_bust/</guid>
     <description><![CDATA[The Housing Boom and Bust]]></description>
-</item><item>
-    <title>理解媒体</title>
-    <link>/understanding_media/</link>
-    <pubDate>Sun, 06 Mar 2022 13:00:48 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>/understanding_media/</guid>
-    <description><![CDATA[Understanding Media: The Extension]]></description>
 </item></channel>
 </rss>
