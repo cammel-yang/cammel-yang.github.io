@@ -1,0 +1,53 @@
+{
+  "_说明": "Xray VLESS+Vision+Reality 服务端配置模板。真实 UUID / privateKey / shortIds 请用脚本生成或用 'xray uuid' 和 'xray x25519' 自动生成，切勿把真实密钥提交进仓库。占位符均为 <...> 形式。",
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "<用 'xray uuid' 生成的 UUID>",
+            "flow": "xtls-rprx-vision"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "show": false,
+          "dest": "www.microsoft.com:443",
+          "xver": 0,
+          "serverNames": [
+            "www.microsoft.com"
+          ],
+          "privateKey": "<用 'xray x25519' 生成的 privateKey>",
+          "shortIds": [
+            "",
+            "<可选: 0-16 位十六进制短ID>"
+          ]
+        }
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls", "quic"]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
+    }
+  ]
+}

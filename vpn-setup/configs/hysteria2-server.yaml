@@ -1,0 +1,32 @@
+# Hysteria2 服务端配置模板（P3 备用节点用）
+# 真实 password 请自行设置为强随机串，切勿提交真实值进仓库。占位符为 <...> 形式。
+# 官方文档: https://v2.hysteria.network/
+
+listen: ":443"   # 走 UDP，记得在 VPS 防火墙/安全组放行此 UDP 端口
+
+# 方式一（推荐，免买证书）：用 ACME 自动签发，需要一个解析到本机的域名
+# acme:
+#   domains:
+#     - <your.domain.com>
+#     - email: <you@example.com>
+
+# 方式二（无域名，自签）：配合客户端 insecure: true 使用，简单但安全性略低
+tls:
+  cert: /etc/hysteria/cert.crt
+  key: /etc/hysteria/private.key
+
+auth:
+  type: password
+  password: <设置一个强随机密码>
+
+# 伪装：把非法/探测流量伪装成正常反代某个网站，提升抗探测能力
+masquerade:
+  type: proxy
+  proxy:
+    url: https://news.ycombinator.com/
+    rewriteHost: true
+
+# 可选带宽限制（按需）
+# bandwidth:
+#   up: 1 gbps
+#   down: 1 gbps
