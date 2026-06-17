@@ -1,0 +1,46 @@
+# Clash / Clash Verge 客户端配置模板（VLESS + Reality）
+# 用法：Clash Verge → 订阅(Profiles) → 新建 Local → 编辑 → 粘贴本文件 → 保存并选中生效。
+# 把 <...> 占位符按你的 vless:// 链接里的值替换；short-id 没有就留 ""。
+# 注意：uuid 相当于密码，不要把填好真实值的文件提交进仓库。
+
+mixed-port: 7890
+allow-lan: false        # 仅本机用；做局域网网关/给路由器分享时改 true
+mode: rule
+log-level: info
+ipv6: false
+
+dns:
+  enable: true
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  fallback:
+    - 8.8.8.8
+    - 1.1.1.1
+
+proxies:
+  - name: "LA-Reality"
+    type: vless
+    server: <服务器IP>           # vless 链接里 @ 后面的 IP
+    port: <端口>                 # IP 后面 : 跟的端口
+    uuid: <你的UUID>             # vless:// 与 @ 之间那串
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: <sni伪装域名>     # 链接里 sni= 的值，如 www.cloudflare.com
+    client-fingerprint: chrome   # 链接里 fp= 的值
+    reality-opts:
+      public-key: <pbk公钥>      # 链接里 pbk= 的值（公钥，可公开）
+      short-id: ""               # 链接里 sid= 的值，没有就留空字符串
+
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "LA-Reality"
+      - DIRECT
+
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
