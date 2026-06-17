@@ -82,6 +82,51 @@ http://SERVER_IP:面板端口
 
 ---
 
+## 实战要点 & 排错（3X-UI v3.x，亲测）
+
+### 安装时的选择
+- 安装脚本问数据库：选 **SQLite**（个人/家用够用）。
+- 自定义端口/账号密码：选 **y**，端口用五位随机数、密码用强密码、访问路径保持随机串。
+- SSL 证书：选 **「Let's Encrypt for IP Address」**——没有域名也能给面板上 HTTPS（6 天有效、自动续期）。ACME 监听端口用默认 **80**。
+- 装完会打印**用户名/密码/端口/路径/访问URL**，全部存好；首次登录后**立刻改一次密码**。
+- 查看当前端口/路径：`x-ui settings`；忘记密码：`x-ui` 菜单里「重置用户名密码」。
+- 让面板开机自启：`x-ui enable`。
+
+### 新建 VLESS+Reality 入站的关键填法
+- Stream → Transmission 选 **RAW**（新版 Xray 把 “TCP” 改名叫 RAW，就是它）。
+- Protocol → Decryption/Encryption 都 **none**；别点 `X25519 auth / ML-KEM-768 auth`。
+- Security → **Reality**，uTLS=**chrome**，点 **Get New Cert** 自动生成公钥/私钥。
+- **mldsa65 Seed / Verify 留空**（抗量子选项，客户端多不支持，填了会连不上）。
+- 加客户端：Clients → **+ Add Clients** → Basics 填 Email(人名)+ 勾 **Attached inbounds** → Credentials 的 **Flow = xtls-rprx-vision**。
+
+### ⚠️ 头号大坑：Reality 的 Target 必须和 SNI 同一个站
+3X-UI 新建入站时，**SNI(serverNames)** 和 **Target(dest)** 是两个独立字段，
+默认 Target 可能是 `aws.amazon.com:443`，而你把 SNI 改成了 `www.oracle.com`——
+**两者不一致 → Reality 握手必失败**。
+
+- 症状：客户端能导入、VPN 能开、`nc/curl` 测端口通，但**网页全打不开、超时**；
+  面板里该客户端显示 **Online: Offline / Last Online: `-`**（从未成功连接）。
+- 原理：SNI 和 dest 不是同一网站，证书对不上，服务器把你当“真实访客”转发到 dest，代理隧道不成立。
+- **修复**：编辑入站 → Security → 把 **Target 改成和 SNI 同一个站**（如都用 `www.oracle.com:443` / `www.oracle.com`）→ 保存 → `x-ui restart`。客户端不用重导。
+
+### 排错命令（在服务器上跑）
+```bash
+ss -tlnp | grep ':443'                 # 确认 xray 在监听 443
+curl -sI --max-time 8 https://你的dest # 确认 dest(目标站)从服务器可达
+# 查看运行中的 Reality 实际参数（serverNames / shortIds / target）：
+sed -n '/realitySettings/,/xver/p' /usr/local/x-ui/bin/config.json
+```
+把**客户端链接里的 `sni` / `sid`** 与服务器的 **serverNames / shortIds** 逐一对上即可定位。
+
+### 切换到面板后的收尾
+P1 用 233boy 脚本建的旧节点（如端口 17947）已不需要，关掉避免混淆：
+```bash
+systemctl disable --now xray     # 只停旧节点，不影响 x-ui 面板
+ss -tlnp | grep 17947            # 无输出即已关闭
+```
+
+---
+
 ## 本阶段完成标志
 - 全家十几台设备都能翻；（路线 B）面板里能看到各设备流量、能单独管理。
 
